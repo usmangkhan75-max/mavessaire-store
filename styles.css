@@ -112,3 +112,49 @@ body,button,input,textarea{color:#EDE7C7}
 .stage-circle{animation:rotate 48s linear infinite}
 @media(max-width:900px){.hero-bottle{height:min(78%,420px);width:min(78%,300px)}.circle-one{width:min(80%,400px)}.circle-two{width:min(96%,480px)}}
 @media(max-width:680px){.hero-bottle{height:min(78%,350px);width:min(80%,270px)}.circle-one{width:min(82%,340px)}.circle-two{width:min(98%,400px)}}
+
+/* MAVESSAIRE — Ice blue, porcelain white and deep blue luxury identity */
+:root{
+ --paper:#F4FAFC;--paper2:#E5F1F6;--ink:#142B3B;--muted:#587080;
+ --gold:#5B9DB8;--gold-light:#8FC5DA;--line:#B9D6E2;--dark:#142B3B;
+}
+html,body{background:#F4FAFC;color:#142B3B}
+body,button,input,textarea{color:#142B3B}
+::selection{background:#8FC5DA;color:#142B3B}
+.announcement,.site-header,.site-header.scrolled,.section-wrap,.newsletter,.footer,.cart-drawer,.modal-card{background:#F4FAFC;color:#142B3B}
+.site-header{border-color:#B9D6E2}
+.brand,.brand small,.main-nav a,.footer-links a,.footer-meta,.hero h1,.section-heading h2,.maison-copy h2,.notes-intro h2,.newsletter h2,.product-info h3,.drawer-head h2,.cart-line h4,.product-detail-layout h2,.checkout-card h2,.quiz-card h2,.search-card h2{color:#142B3B}
+.hero{background:radial-gradient(ellipse at 74% 45%,#DCEEF5 0%,transparent 46%),#F4FAFC}
+.hero h1 em,.section-heading h2 em,.maison-copy h2 em,.notes-intro h2 em,.newsletter h2 em,.eyebrow,.kicker,.note-number,.note-row small,.note-arrow,.product-price,.stage-index,.stage-note,.hero-scroll{color:#5B9DB8}
+.hero-description,.section-heading>p,.notes-intro>p,.maison-caption,.maison-copy>p:not(.eyebrow),.note-row p,.newsletter>div>p:not(.eyebrow),.cart-line p,.empty-cart,.product-detail-layout p{color:#587080}
+.hero .button-dark,.button-dark,.add-button:hover,.button-light{background:#142B3B;color:#FFFFFF;border-color:#142B3B}
+.under-link,.add-button,.bag-trigger{color:#142B3B;border-color:#8FC5DA}
+.ticker,.discovery{background:#142B3B;color:#FFFFFF}
+.ticker span,.discovery h2,.discovery h2 em,.discovery .eyebrow,.discovery-inner>p:not(.eyebrow){color:#FFFFFF}
+.maison{background:#E5F1F6;color:#142B3B}
+.maison-visual,.maison-orbit,.note-art,.product-art,.detail-art{background:#DCEEF5;color:#142B3B;border-color:#8FC5DA}
+.maison-monogram,.maison-copy h2,.signature,.note-row h3{color:#142B3B}
+.product-art{background:#E5F1F6!important}
+.product-art:before{border-color:#8FC5DA}
+.product-label,.product-tag,.product-info p,.product-actions small{color:#587080}
+.product-info,.product-actions{color:#142B3B}
+.filter{color:#142B3B}.filter.active{color:#142B3B;border-color:#5B9DB8;background:#E5F1F6}
+.form-grid label,.newsletter-form label,.newsletter-form small,.payment-choice small{color:#587080}
+.form-grid input,.form-grid textarea,.search-card input{background:#FFFFFF;color:#142B3B;border-color:#B9D6E2}
+.payment-choice,.checkout-summary,.detail-notes span,.search-result{border-color:#B9D6E2;color:#142B3B}
+.toast{background:#142B3B;color:#FFFFFF}
+.scroll-progress{background:#5B9DB8;box-shadow:0 0 12px #8FC5DA80}
+.experience-rail{color:#587080}.experience-rail i{background:linear-gradient(#5B9DB8,transparent)}
+.hero-stage:before{background:#8FC5DA;opacity:.18}
+.stage-circle{border-color:#8FC5DA}
+.circle-two{border-color:#B9D6E2}
+.hero-coordinates,.hero-coordinates span{color:#587080}
+.hero-scroll i,.kicker-line{background:#5B9DB8}
+.product-photo,.detail-photo{mix-blend-mode:normal}
+.product-card:hover .product-photo{filter:brightness(1.04)}
+@media(max-width:680px){
+ .hero{background:radial-gradient(ellipse at 50% 70%,#DCEEF5,transparent 48%),#F4FAFC}
+ .product-art{background:#E5F1F6!important}
+ .maison{background:#E5F1F6}
+ .discovery{background:#142B3B}
+}
