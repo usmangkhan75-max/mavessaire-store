@@ -1,3 +1,5 @@
+/* Emergency loader release: run before storefront initialization. */
+(function(){var release=function(){var p=document.getElementById("preloader");if(p)p.classList.add("done")};if(document.readyState==="complete")setTimeout(release,250);else window.addEventListener("load",function(){setTimeout(release,250)},{once:true});setTimeout(release,1800)})();
 const products=[
 {id:'noir',name:'Noir Éternel',type:'men',tag:'WOODY · AMBER · INTENSE',price:4650,size:'100 ml',tone:'black',desc:'A confident composition of dark woods, warm amber and a refined trail of spice.',notes:['Black pepper','Cedarwood','Amber'],badge:'BESTSELLER'},
 {id:'rose',name:'Rose Velours',type:'women',tag:'FLORAL · MUSK · SOFT',price:4250,size:'100 ml',tone:'rose',desc:'Velvety rose petals meet soft musk and a delicate sweetness.',notes:['Damask rose','Peony','White musk'],badge:'NEW'},
