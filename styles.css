@@ -158,3 +158,25 @@ body,button,input,textarea{color:#142B3B}
  .maison{background:#E5F1F6}
  .discovery{background:#142B3B}
 }
+
+/* V13 — floating crystal scent sculpture; cool MAVESSAIRE palette */
+.hero-stage{background:transparent;isolation:isolate}
+.hero-stage:before{content:"";position:absolute;width:min(78%,440px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#DCEEF5 0%,#8FC5DA55 34%,transparent 72%);filter:blur(18px);opacity:.8;z-index:-1}
+.stage-circle{border-color:#8FC5DA70}
+.circle-one{width:min(76%,420px);border-style:solid;animation:rotate 52s linear infinite}
+.circle-two{width:min(94%,520px);border:1px dashed #5B9DB855;animation:rotate 78s linear infinite reverse}
+.hero-object{position:relative;z-index:2;width:min(84%,430px);aspect-ratio:1;display:grid;place-items:center;animation:objectFloat 7s ease-in-out infinite;transition:transform .6s ease}
+.object-halo{position:absolute;width:62%;height:62%;border-radius:50%;background:#8FC5DA55;filter:blur(36px);animation:haloPulse 5s ease-in-out infinite}
+.scent-sculpture{position:relative;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 25px 35px #142B3B22)}
+.crystal-turn{transform-origin:260px 260px;animation:crystalTurn 18s ease-in-out infinite alternate}
+.scent-ribbon{transform-origin:260px 260px;animation:ribbonDrift 9s ease-in-out infinite alternate}
+.object-caption{position:absolute;right:-6%;bottom:14%;font-size:7px;line-height:1.8;letter-spacing:2.5px;color:#587080}
+.note-top{color:#587080}.note-bottom span:first-child{color:#142B3B}
+.stage-index{color:#5B9DB8}
+@keyframes objectFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-13px) rotate(1deg)}}
+@keyframes haloPulse{0%,100%{transform:scale(.86);opacity:.45}50%{transform:scale(1.12);opacity:.8}}
+@keyframes crystalTurn{0%{transform:rotate(-4deg) scale(.98)}100%{transform:rotate(4deg) scale(1.02)}}
+@keyframes ribbonDrift{0%{transform:translate(-5px,5px) rotate(-3deg)}100%{transform:translate(7px,-7px) rotate(3deg)}}
+@media(max-width:900px){.hero-object{width:min(82%,390px)}.object-caption{right:-2%}}
+@media(max-width:680px){.hero-object{width:min(86%,340px)}.object-caption{right:-1%;bottom:10%;font-size:6px}.hero-stage:before{width:85%}}
+@media(prefers-reduced-motion:reduce){.hero-object,.object-halo,.crystal-turn,.scent-ribbon{animation:none!important}}
