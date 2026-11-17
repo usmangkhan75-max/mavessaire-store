@@ -33,6 +33,7 @@ function searchResults(term){const found=products.filter(p=>(p.name+' '+p.tag+' 
 $('bagOpen').onclick=openDrawer;$('bagClose').onclick=closeDrawer;$('overlay').onclick=closeDrawer;$('checkoutOpen').onclick=checkout;$('checkoutClose').onclick=()=>closeModal('checkoutModal');$('productClose').onclick=()=>closeModal('productModal');$('checkoutForm').addEventListener('submit',placeOrder);
 $('startQuiz').onclick=()=>{quizStep=0;openModal('quizModal');renderQuiz()};
 document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;renderProducts()});
+document.querySelectorAll('[data-shop-filter]').forEach(a=>a.addEventListener('click',()=>{filter=a.dataset.shopFilter;document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x.dataset.filter===filter));renderProducts()}));
 $('searchOpen').onclick=()=>{openModal('searchModal');$('searchInput').value='';searchResults('');$('searchInput').focus()};$('searchClose').onclick=()=>closeModal('searchModal');$('searchInput').addEventListener('input',e=>searchResults(e.target.value));
 $('menuOpen').onclick=()=>$('mainNav').classList.toggle('mobile-open');document.querySelectorAll('.main-nav a').forEach(a=>a.onclick=()=>$('mainNav').classList.remove('mobile-open'));
 $('newsletterForm').onsubmit=e=>{e.preventDefault();toast('THANK YOU — NEWSLETTER IS A DESIGN DEMO');e.target.reset()};
