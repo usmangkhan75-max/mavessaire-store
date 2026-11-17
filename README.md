@@ -1,20 +1,36 @@
-# MAVESSAIRE — Demo storefront
+# MAVESSAIRE — The Fragrance Atelier
 
-French-luxury-inspired perfume storefront, built with vanilla HTML, CSS and JavaScript.
+An original, responsive luxury fragrance storefront for GitHub Pages. Built with semantic HTML, CSS and vanilla JavaScript; no build step or framework required.
 
 ## Preview locally
-Open index.html or run `python -m http.server 8000`, then visit http://localhost:8000.
 
-## Features
-- Responsive storefront and six sample fragrances
-- Product search, collection filters, product detail views
-- Shopping bag, quantity controls and PKR totals
-- COD and bank-transfer demo checkout
-- Rs. 200 delivery below Rs. 5,000; free delivery at/above Rs. 5,000
-- Browser-local demo order desk at admin.html and CSV export
+Open \`index.html\`, or run:
 
-## Important
-This is a front-end demo. Orders are stored in the visitor's browser only and are not sent to the owner. Bank transfer is not verified. Do not accept real customer orders until a secure backend, authenticated admin, server-side validation, privacy policy and verified payment workflow are configured.
+\`\`\`bash
+python -m http.server 8000
+\`\`\`
 
-## GitHub Pages
-Repository Settings → Pages → Deploy from a branch → main → /(root) → Save.
+Then visit http://localhost:8000.
+
+## Included
+
+- Editorial fragrance-house homepage and responsive layout
+- Animated product hero, scroll reveals, orbit graphics and subtle parallax
+- Six editable sample fragrances with filters, product details and scent finder
+- Live search across product names, fragrance families and notes
+- Shopping bag with quantity controls and persistent browser storage
+- PKR pricing; PKR 200 delivery below PKR 5,000, free at/above PKR 5,000
+- Demo checkout with Cash on Delivery and bank-transfer selection
+- Demo order desk at \`admin.html\` with CSV export
+
+## Important — demo checkout
+
+This is a static GitHub Pages demo. Orders are saved only in the customer's own browser and are **not sent to the store owner**. Bank transfer is not verified, and no payment is processed. Do not accept real orders until a secure backend, server-side validation, authenticated order dashboard, privacy policy and verified payment process are configured.
+
+## Edit the catalogue
+
+The sample product catalogue is in \`app.js\`, in the \`products\` array. Update product names, descriptions, prices, sizes, families and fragrance notes there.
+
+## Publish with GitHub Pages
+
+In the repository: **Settings → Pages → Deploy from a branch → main → /(root) → Save**. The site is served from the repository root.
