@@ -64,3 +64,51 @@ html{background:#10100f;scroll-padding-top:90px}body{background:#10100f;color:#e
 @media(max-width:900px){.experience-rail{right:9px}.hero{min-height:680px}.hero-stage{height:470px}.hero-bottle{height:330px;width:min(76%,280px)}}
 @media(max-width:680px){.hero{background:radial-gradient(ellipse at 50% 70%,#6c52311c,transparent 48%),#10100f}.hero h1{letter-spacing:-2px}.hero-stage{height:400px}.hero-bottle{height:300px;width:min(72%,250px)}.hero-coordinates{font-size:6px}.experience-rail{display:none}.product-art{background:#1c1a17!important}.maison{background:#191714}.discovery{background:#c3a16f}}
 @media(prefers-reduced-motion:reduce){.experience-rail{display:none}}
+
+/* MAVESSAIRE palette lock — only the four approved brand colours */
+:root{--paper:#EDE7C7;--paper2:#EDE7C7;--ink:#200E01;--muted:#5B0202;--gold:#8B0000;--gold-light:#8B0000;--line:#5B0202;--dark:#200E01}
+html,body{background:#200E01;color:#EDE7C7}
+body,button,input,textarea{color:#EDE7C7}
+::selection{background:#8B0000;color:#EDE7C7}
+.announcement,.site-header,.site-header.scrolled,.section-wrap,.newsletter,.footer,.cart-drawer,.modal-card{background:#200E01;color:#EDE7C7}
+.site-header,.collection-toolbar,.collection-foot,.hero-bottom,.note-row,.drawer-head,.subtotal,.cart-line{border-color:#5B0202}
+.brand,.brand small,.main-nav a,.footer-links a,.footer-meta,.hero h1,.section-heading h2,.maison-copy h2,.notes-intro h2,.newsletter h2,.product-info h3,.drawer-head h2,.cart-line h4,.product-detail-layout h2,.checkout-card h2,.quiz-card h2,.search-card h2{color:#EDE7C7}
+.hero{background:#200E01}
+.hero h1 em,.section-heading h2 em,.maison-copy h2 em,.notes-intro h2 em,.newsletter h2 em,.eyebrow,.kicker,.note-number,.note-row small,.note-arrow,.product-price,.stage-index,.stage-note,.hero-scroll{color:#8B0000}
+.hero-description,.section-heading>p,.notes-intro>p,.maison-caption,.maison-copy>p:not(.eyebrow),.note-row p,.newsletter>div>p:not(.eyebrow),.cart-line p,.empty-cart,.product-detail-layout p{color:#EDE7C7}
+.hero .button-dark,.button-dark,.add-button:hover,.button-light{background:#8B0000;color:#EDE7C7;border-color:#8B0000}
+.under-link,.add-button,.bag-trigger{color:#EDE7C7;border-color:#8B0000}
+.ticker,.discovery{background:#5B0202;color:#EDE7C7}
+.ticker span,.discovery h2,.discovery h2 em,.discovery .eyebrow,.discovery-inner>p:not(.eyebrow){color:#EDE7C7}
+.maison{background:#5B0202;color:#EDE7C7}
+.maison-visual,.maison-orbit,.note-art,.product-art,.detail-art{background:#200E01;color:#EDE7C7;border-color:#8B0000}
+.maison-monogram,.maison-copy h2,.signature,.note-row h3{color:#EDE7C7}
+.product-art{background:#5B0202!important}
+.product-art:before{border-color:#EDE7C7}
+.product-label,.product-tag,.product-info p,.product-actions small{color:#EDE7C7}
+.product-info,.product-actions{color:#EDE7C7}
+.product-photo,.detail-photo{mix-blend-mode:normal}
+.filter{color:#EDE7C7}.filter.active{color:#EDE7C7;border-color:#8B0000}
+.form-grid label,.newsletter-form label,.newsletter-form small,.payment-choice small{color:#EDE7C7}
+.form-grid input,.form-grid textarea,.search-card input{background:#200E01;color:#EDE7C7;border-color:#8B0000}
+.payment-choice,.checkout-summary,.detail-notes span,.search-result{border-color:#8B0000;color:#EDE7C7}
+.toast{background:#8B0000;color:#EDE7C7}
+.hero-stage{position:relative;display:grid;place-items:center}
+.stage-circle{top:0;right:0;bottom:0;left:0;margin:auto;border-color:#8B0000}
+.circle-one{width:min(78%,440px);height:auto;aspect-ratio:1}
+.circle-two{width:min(96%,540px);height:auto;aspect-ratio:1;border-color:#5B0202}
+.hero-stage:before{background:#5B0202;opacity:.22}
+.hero-bottle{height:min(82%,500px);width:min(76%,340px);display:grid;place-items:center;position:relative;z-index:3;animation:float 6s ease-in-out infinite}
+.matte-bottle{height:100%;width:100%;display:block;overflow:visible}
+.hero-bottle img{display:none}
+.hero-stage:hover .matte-bottle{transform:translateY(-5px)}
+.hero-bottle,.matte-bottle{filter:none}
+.stage-note,.stage-index{color:#EDE7C7}
+.hero-coordinates{color:#EDE7C7}
+.hero-coordinates span{color:#EDE7C7}
+.hero-scroll i,.kicker-line{background:#8B0000}
+.scroll-progress{background:#8B0000;box-shadow:none}
+.experience-rail{color:#EDE7C7}.experience-rail i{background:#8B0000}
+.stage-circle{animation:rotate 48s linear infinite}
+@media(max-width:900px){.hero-bottle{height:min(78%,420px);width:min(78%,300px)}.circle-one{width:min(80%,400px)}.circle-two{width:min(96%,480px)}}
+@media(max-width:680px){.hero-bottle{height:min(78%,350px);width:min(80%,270px)}.circle-one{width:min(82%,340px)}.circle-two{width:min(98%,400px)}}
