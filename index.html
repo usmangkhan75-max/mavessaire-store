@@ -6,7 +6,7 @@
 <title>MAVESSAIRE — The Fragrance Atelier</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=14">
+<link rel="stylesheet" href="styles.css?v=16">
 </head>
 <body>
 <div class="scroll-progress" id="scrollProgress"></div>
@@ -14,12 +14,12 @@
 <div class="announcement"><span>COMPLIMENTARY DELIVERY ON ORDERS ABOVE PKR 5,000</span><span>AN INDEPENDENT FRAGRANCE HOUSE · MMXXVI</span></div>
 <header class="site-header" id="header">
 <a class="brand" href="#home" aria-label="MAVESSAIRE home">MAVESSAIRE<span>®</span><small>MAISON DE PARFUM</small></a>
-<nav class="main-nav" id="mainNav"><a href="#collection">SHOP ALL</a><a href="#collection">FOR HIM</a><a href="#collection">FOR HER</a><a href="#benefits">DELIVERY & FAQ</a></nav>
+<nav class="main-nav" id="mainNav"><a href="#home">HOME</a><a href="#collection" data-shop-filter="men">MEN</a><a href="#collection" data-shop-filter="women">WOMEN</a><a href="#collection">CATALOGUE</a><a href="#benefits">DELIVERY</a></nav>
 <div class="header-actions"><button class="search-trigger" id="searchOpen" aria-label="Search">⌕</button><button class="bag-trigger" id="bagOpen">BAG <span id="bagCount">0</span></button><button class="mobile-menu" id="menuOpen" aria-label="Open menu">☰</button></div>
 </header>
 <main id="home">
-<section class="hero shop-hero"><div class="hero-copy"><p class="hero-edition">MAVESSAIRE / THE FRAGRANCE STORE</p><p class="kicker"><span class="kicker-line"></span> DISCOVER YOUR NEXT SIGNATURE</p><h1>Find your<br><em>fragrance.</em></h1><p class="hero-description">Explore modern eau de parfums for every mood, moment and memory. Find the scent that feels unmistakably yours.</p><div class="hero-ctas"><a class="button button-dark" href="#collection">SHOP ALL FRAGRANCES <span>↗</span></a><a class="under-link" href="#benefits">DELIVERY & PAYMENT</a></div><div class="hero-bottom"><span>EAU DE PARFUM · 50 & 100 ML</span><span>PAKISTAN DELIVERY</span></div></div><a class="hero-feature" href="#collection" aria-label="Shop Halcyon Salt"><img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1000&q=88" alt="Featured perfume bottle" fetchpriority="high"><div class="hero-feature-shade"></div><div class="hero-feature-copy"><span>FEATURED FRAGRANCE · 01</span><strong>Halcyon Salt</strong><small>Fresh · Mineral · Musk</small><b>SHOP NOW ↗</b></div></a></section><section class="store-benefits" id="benefits"><div><span>✳</span><b>FREE DELIVERY</b><small>ON ORDERS ABOVE PKR 5,000</small></div><div><span>◇</span><b>CASH ON DELIVERY</b><small>PAY WHEN IT ARRIVES</small></div><div><span>↗</span><b>BANK TRANSFER</b><small>AVAILABLE AT CHECKOUT</small></div><div><span>♡</span><b>FIND YOUR SIGNATURE</b><small>EXPLORE SIX SAMPLE SCENTS</small></div></section><section class="collection section-wrap" id="collection">
-<div class="section-heading reveal"><div><p class="eyebrow">01 / THE FRAGRANCE WARDROBE</p><h2>Find your <em>signature.</em></h2></div><p>Six expressions. Different moods.<br>One unmistakable point of view.</p></div>
+<section class="hero shop-hero retail-hero"><div class="hero-copy"><p class="kicker"><span class="kicker-line"></span> MAVESSAIRE FRAGRANCES</p><h1>Find your<br><em>signature scent.</em></h1><p class="hero-description">Explore expressive fragrances for every day, every mood and every occasion.</p><div class="hero-ctas"><a class="button button-dark" href="#collection">SHOP NOW <span>↗</span></a></div></div><a class="hero-feature" href="#collection" aria-label="Shop featured fragrance"><img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1000&q=88" alt="Featured perfume" fetchpriority="high"><div class="hero-feature-shade"></div><div class="hero-feature-copy"><span>FEATURED COLLECTION</span><strong>Discover MAVESSAIRE</strong><small>Find a fragrance that feels like you</small><b>SHOP THE COLLECTION ↗</b></div></a></section><section class="store-benefits" id="benefits"><div><span>✳</span><b>FREE DELIVERY</b><small>ON ORDERS ABOVE PKR 5,000</small></div><div><span>◇</span><b>CASH ON DELIVERY</b><small>PAY WHEN IT ARRIVES</small></div><div><span>↗</span><b>BANK TRANSFER</b><small>AVAILABLE AT CHECKOUT</small></div><div><span>♡</span><b>FIND YOUR SIGNATURE</b><small>EXPLORE SIX SAMPLE SCENTS</small></div></section><section class="collection section-wrap" id="collection">
+<div class="section-heading reveal"><div><p class="eyebrow">SHOP MAVESSAIRE</p><h2>Featured <em>fragrances.</em></h2></div><a class="under-link" href="#collection">VIEW ALL PRODUCTS ↗</a></div><p>Six expressions. Different moods.<br>One unmistakable point of view.</p></div>
 <div class="collection-toolbar reveal"><div class="filters" role="group" aria-label="Filter fragrances"><button class="filter active" data-filter="all">ALL</button><button class="filter" data-filter="men">HIM</button><button class="filter" data-filter="women">HER</button><button class="filter" data-filter="unisex">EVERYONE</button></div><span id="resultCount">06 FRAGRANCES</span></div>
 <div class="product-grid" id="products" aria-live="polite"></div>
 <div class="collection-foot"><span>COMPOSITIONS TO LIVE IN, NOT JUST WEAR.</span><span>MAISON MAVESSAIRE — 2026</span></div>
@@ -34,5 +34,5 @@
 <div class="modal" id="quizModal" role="dialog" aria-modal="true"><div class="modal-card quiz-card" id="quizContent"></div></div>
 <div class="modal search-modal" id="searchModal" role="dialog" aria-modal="true" aria-label="Search fragrances"><div class="modal-card search-card"><button class="close-btn modal-x" id="searchClose" aria-label="Close search">×</button><p class="eyebrow">THE FRAGRANCE INDEX</p><h2>Find a <em>note.</em></h2><input id="searchInput" type="search" placeholder="Try amber, rose, musk..." autocomplete="off"><div id="searchResults"></div></div></div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="app.js?v=15" defer></script>
+<script src="app.js?v=16" defer></script>
 </body></html>
